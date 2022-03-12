@@ -1,3 +1,5 @@
+from flask import Flask, jsonify, request, Response, render_template
+import json
 import pickle
 import pandas as pd
 import numpy as np
@@ -32,7 +34,7 @@ def preprocess(data):
     return df1
 
 
-def predict(model, data):
+def model_predict(model, data):
     return model.predict(data)
 
 
@@ -44,14 +46,38 @@ for model in models:
     model = pickle.load(open(f'./models/{model}.pkl', 'rb'))
     loaded_models.append(model)
 
-dataset = pd.read_csv('dataset.csv')
 
-index = random.randint(0, len(dataset))
-random_data = dataset.iloc[index]
-true_value = random_data['Suggested Job Role']
-random_data = random_data.drop(['Suggested Job Role']).values.reshape((1, 38))
-print(index)
-for model in loaded_models:
-    pred_value = predict(model, preprocess(random_data))[0]
-    print(f"{pred_value} => {names[loaded_models.index(model)]}")
-print(true_value)
+app = Flask(__name__)
+
+
+@app.route('/', methods=["GET"])
+def index():
+    return render_template("index.html")
+
+
+@app.route('/predict', methods=['POST'])
+def predict():
+    data = request.get_json(force=True)['data']
+    data = np.array(data).reshape((1, 38))
+    data = preprocess(data)
+    predictions = []
+    for model in loaded_models:
+        predictions.append(model_predict(model, data)[0])
+    print(predictions)
+    return Response(json.dumps(predictions),  mimetype='application/json')
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+# dataset = pd.read_csv('dataset.csv')
+
+# index = random.randint(0, len(dataset))
+# random_data = dataset.iloc[index]
+# true_value = random_data['Suggested Job Role']
+# random_data = random_data.drop(['Suggested Job Role']).values.reshape((1, 38))
+# print(index)
+# for model in loaded_models:
+#     pred_value = predict(model, preprocess(random_data))[0]
+#     print(f"{pred_value} => {names[loaded_models.index(model)]}")
+# print(true_value)

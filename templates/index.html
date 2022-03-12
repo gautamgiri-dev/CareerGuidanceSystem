@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <title>MargDarshan</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">MargDarshan</div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="section__1">
+                <div class="section__title">Academic Performance</div>
+                <div class="academic">
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>% Score in Operating System</span>
+                        </div>
+                        <div class="input__group__input">
+                            <input type="number" name="0" placeholder="% Score" />
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>% Score in Algorithms</span>
+                        </div>
+                        <div class="input__group__input">
+                            <input type="number" name="1" placeholder="% Score" />
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>% Score in Programming Concepts</span>
+                        </div>
+                        <div class="input__group__input">
+                            <input type="number" name="2" placeholder="% Score" />
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>% Score in Software Engineering</span>
+                        </div>
+                        <div class="input__group__input">
+                            <input type="number" name="3" placeholder="% Score" />
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>% Score in Computer Networks</span>
+                        </div>
+                        <div class="input__group__input">
+                            <input type="number" name="4" placeholder="% Score" />
+                        </div>
+                    </div>
+                    <!-- Percentage in Software Engineering -->
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>% Score in Electronics Subjects</span>
+                        </div>
+                        <div class="input__group__input">
+                            <input type="number" name="5" placeholder="% Score" />
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>% Score in Computer Architecture</span>
+                        </div>
+                        <div class="input__group__input">
+                            <input type="number" name="6" placeholder="% Score" />
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>% Score in Mathematics</span>
+                        </div>
+                        <div class="input__group__input">
+                            <input type="number" name="7" placeholder="% Score" />
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>% Score in Communication skills</span>
+                        </div>
+                        <div class="input__group__input">
+                            <input type="number" name="8" placeholder="% Score" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section__1">
+                <div class="section__title">Other Information</div>
+                <div class="academic">
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Hours Working Per Day</span>
+                        </div>
+                        <div class="input__group__input">
+                            <input type="number" name="9" placeholder="Eg. 4 to 12" />
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Logical quotient rating</span>
+                        </div>
+                        <div class="input__group__input">
+                            <input type="number" min="1" max="10" name="10" placeholder="Rating(Eg. 1 to 10)" />
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Hackathons participated in?</span>
+                        </div>
+                        <div class="input__group__input">
+                            <input type="number" name="11" placeholder="Eg. 0 to 6" />
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Coding Skills Rating</span>
+                        </div>
+                        <div class="input__group__input">
+                            <input type="number" min="1" max="9" name="12" placeholder="Eg. 1 to 10" />
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Public Speaking Rating</span>
+                        </div>
+                        <div class="input__group__input">
+                            <input type="number" min="1" max="9" name="13" placeholder="Rating(Eg. 1 to 9)" />
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Salary Range Expected</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="30">
+                  <option value="salary">Salary</option>
+                  <option value="Work">Work</option>
+                </select>
+                        </div>
+                    </div>
+                    <!--<div class="input__group">
+                        <div class="input__group__title">
+                            <span>Self-Learning Capability</span>
+                        </div>
+                        <div class="input__group__input">
+                            <input type="text" name="name"  placeholder="Self-Learning Capability">
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Extra-Courses Did?</span>
+                        </div>
+                        <div class="input__group__input">
+                            <input type="text" name="name"  placeholder="Extra-Courses">
+                        </div>
+                    </div> -->
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Certifications</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="17">
+                  <option value="shell programming">Shell Programming</option>
+                  <option value="machine learning">ML</option>
+                  <option value="app development">App Dev</option>
+                  <option value="python">Python</option>
+                  <option value="r programming">R</option>
+                  <option value="information security">
+                    Information Security
+                  </option>
+                  <option value="hadoop">Hadoop</option>
+                  <option value="distro making">Distro Making</option>
+                  <option value="full stack">Full Stack</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Workshops</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="18">
+                  <option value="cloud computing">Cloud Computing</option>
+                  <option value="database security">Database Security</option>
+                  <option value="web technologies">Web Technologies</option>
+                  <option value="data science">Data Science</option>
+                  <option value="cloud computing">Cloud Computing</option>
+                  <option value="testing">Testing</option>
+                  <option value="hacking">Hacking</option>
+                  <option value="game development">Game Dev</option>
+                  <option value="system designing">System Design</option>
+                </select>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Reading and Writing Skills</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="21">
+                  <option value="excellent">Excellent</option>
+                  <option value="medium">Medium</option>
+                  <option value="poor">Poor</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>'Memory Capability Score</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="22">
+                  <option value="excellent">Excellent</option>
+                  <option value="medium">Medium</option>
+                  <option value="poor">Poor</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Interested Subjects</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="23">
+                  <option value="networks">Networks</option>
+                  <option value="hacking">Hacking</option>
+                  <option value="Computer Architecture">
+                    Computer Architecture
+                  </option>
+                  <option value="programming">Programming</option>
+                  <option value="parallel computing">Parallel Computing</option>
+                  <option value="IOT">IOT</option>
+                  <option value="data engineering">Data Engineering</option>
+                  <option value="cloud computing">Cloud Computing</option>
+                  <option value="Software Engineering">
+                    Software Engineering
+                  </option>
+                  <option value="Management">Management</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Interested Career Area</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="24">
+                  <option value="system developer">System Developer</option>
+                  <option value="Business process analyst">
+                    Business process analyst
+                  </option>
+                  <option value="developer">Developer</option>
+                  <option value="testing">Testing</option>
+                  <option value="security">Security</option>
+                  <option value="cloud computing">Cloud Computing</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Job/Higher Studies?</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="25">
+                  <option value="higherstudies">Higher Studies</option>
+                  <option value="job">Job</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Type of Company Want to Settle in?</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="26">
+                  <option value="Web Services">Web Services</option>
+                  <option value="SAaS services">SaaS services</option>
+                  <option value="Sales and Marketing">
+                    Sales and Marketing
+                  </option>
+                  <option value="Testing and Maintainance Services">
+                    Testing and Maintainance Services
+                  </option>
+                  <option value="product development">
+                    Product Development
+                  </option>
+                  <option value="BPA">BPA</option>
+                  <option value="Service Based">Service Based</option>
+                  <option value="Product based">Product Based</option>
+                  <option value="Cloud Services">Cloud Services</option>
+                  <option value="Finance">Finance</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Interested Type of Books</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="29">
+                  <option value="Prayer books">Prayer books</option>
+                  <option value="Childrens">Childrens</option>
+                  <option value="Travel">Travel</option>
+                  <option value="Romance">Romance</option>
+                  <option value="Cookbooks">Cookbooks</option>
+                  <option value="Self help">Self help</option>
+                  <option value="Drama">Drama</option>
+                  <option value="Math">Math</option>
+                  <option value="Religion-Spirituality">
+                    Religion-Spirituality
+                  </option>
+                  <option value="Anthology">Anthology</option>
+                  <option value="Trilogy">Trilogy</option>
+                  <option value="Autobiographies">Autobiographies</option>
+                  <option value="Mystery">Mystery</option>
+                  <option value="Diaries">Diaries</option>
+                  <option value="Journals">Journals</option>
+                  <option value="History">History</option>
+                  <option value="Art">Art</option>
+                  <option value="Dictionaries">Dictionaries</option>
+                  <option value="Horror">Horror</option>
+                  <option value="Encyclopedias">Encyclopedias</option>
+                  <option value="Action and Adventure">
+                    Action and Adventure
+                  </option>
+                  <option value="Fantasy">Fantasy</option>
+                  <option value="Comics">Comics</option>
+                  <option value="Science fiction">Science fiction</option>
+                  <option value="Series">Series</option>
+                  <option value="Guide">Guide</option>
+                  <option value="Biographies">Biographies</option>
+                  <option value="Health">Health</option>
+                  <option value="Prayer books">Prayer books</option>
+                  <option value="Satire">Satire</option>
+                  <option value="Science">Science</option>
+                  <option value="Poetry">Poetry</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Gentle or Tuff Behaviour?</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="32">
+                  <option value="gentle">Gentle</option>
+                  <option value="stubborn">Stubborn</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Management or Technical</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="33">
+                  <option value="Management">Management</option>
+                  <option value="Technical">Technical</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Salary/Work</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="34">
+                  <option value="salary">Salary</option>
+                  <option value="work">work</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Hard/Smart Worker</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="35">
+                  <option value="hard worker">Hard worker</option>
+                  <option value="smart worker">Smart worker</option>
+                </select>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+
+            <div class="section__1">
+                <div class="section__title">Miscellaneous Information</div>
+                <div class="academic">
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Can Work Long Time Before System?</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="14">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Self-Learning Capability</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="15">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Extra-Courses Did?</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="16">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Talent tests Taken</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="19">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Olympiads</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="20">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Taken Inputs from Seniors or Elders</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="27">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Interested in Games</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="28">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>In a Realtionship</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="31">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Worked in Teams Ever?</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="36">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <div class="input__group__title">
+                            <span>Introvert</span>
+                        </div>
+                        <div class="input__group__input">
+                            <select name="37">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="control">
+            <div class="buttons">
+                <button id="btn-get-result">Get Result</button>
+            </div>
+        </div>
+        <div class="result">
+            <div class="container">
+                <div>
+                    Decision Tree Classifier: <span id="DTC"></span>
+                </div>
+                <div>
+                    Decision Tree Classifier Entropy: <span id="DTC-ENT"></span>
+                </div>
+                <div>
+                    K Nearest Neighbour: <span id="KNN"></span>
+                </div>
+                <div>
+                    Random Forest Classifier: <span id="RFC"></span>
+                </div>
+                <div>
+                    Support Vector Machine<span id="SVM"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        var header = document.getElementsByTagName("header")[0];
+
+        window.addEventListener("scroll", function(e) {
+            if (header.offsetTop !== 0) {
+                if (!header.className == "shadow") {
+                    header.classList.add("shadow");
+                }
+            } else {
+                header.classList.remove("shadow");
+            }
+        });
+
+        document.getElementById('btn-get-result').addEventListener('click', () => {
+            var data = [];
+            for (var i = 0; i < 38; i++) {
+                data.push(document.getElementsByName(i.toString())[0].value);
+            }
+            fetch("/predict", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    data: data
+                })
+            }).then(res =>
+                res.json()
+            ).then(data => {
+                let controls = document.querySelectorAll(".result .container span");
+                for (var i = 0; i < data.length; i++) {
+                    controls[i].innerHTML = data[i];
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
