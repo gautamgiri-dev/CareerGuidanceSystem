@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request, Response, render_template
 import json
+from waitress import serve
 import pickle
 import pandas as pd
 import numpy as np
@@ -68,16 +69,4 @@ def predict():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
-# dataset = pd.read_csv('dataset.csv')
-
-# index = random.randint(0, len(dataset))
-# random_data = dataset.iloc[index]
-# true_value = random_data['Suggested Job Role']
-# random_data = random_data.drop(['Suggested Job Role']).values.reshape((1, 38))
-# print(index)
-# for model in loaded_models:
-#     pred_value = predict(model, preprocess(random_data))[0]
-#     print(f"{pred_value} => {names[loaded_models.index(model)]}")
-# print(true_value)
+    serve(app)
