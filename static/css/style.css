@@ -200,7 +200,9 @@ button:active:before {
     transition: background 0s;
 }
 
-.result {}
+.result {
+    margin-bottom: 10px;
+}
 
 .container {
     display: flex;
