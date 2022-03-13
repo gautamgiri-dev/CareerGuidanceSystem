@@ -122,25 +122,25 @@ graph TD
 
 #### Implementation
 
-##### Data Collection:
-- Collection of data is one of the major tasks of any machine learning project. Because the input we provide to the algorithms is data. So, the algorithm's efficiency and accuracy depends upon the correctness and quality of data. So the data will be the output. For MargDarshan many parameters are required like students academic scores in various subjects, specialisations, programming and analytical capabilities, memory, personal details like personality, interests, sports, competitions, certifications, books interested and many more. As all these factors play a vital role in deciding a student's progress towards a career area, all these are taken into consideration. As no publicly available dataset for the cause was found, we used a randomly generated non-accurate dataset.
-##### Data Pre-Processing:
-- Data collected from various sources can be unorganised and there may be a lot of invalid data values and unwanted data. Cleaning all these data and replacing them with meaningful data and removing missing data and replacing them with some alternate values. Even data collected may contain completely garbage values. It may not be in the exact format. All such scenario data must be verified and replaced with alternate values to make data meaningful and useful.
-##### Algorithms:
-- SVM
-- Decision Tree Classifier
-- Decision Tree Classifier Entropy
-- Random Forest Classifier
-- KNN
+* ##### Data Collection:
+    * Collection of data is one of the major tasks of any machine learning project. Because the input we provide to the algorithms is data. So, the algorithm's efficiency and accuracy depends upon the correctness and quality of data. So the data will be the output. For MargDarshan many parameters are required like students academic scores in various subjects, specialisations, programming and analytical capabilities, memory, personal details like personality, interests, sports, competitions, certifications, books interested and many more. As all these factors play a vital role in deciding a student's progress towards a career area, all these are taken into consideration. As no publicly available dataset for the cause was found, we used a randomly generated non-accurate dataset.
+* ##### Data Pre-Processing:
+    *  Data collected from various sources can be unorganised and there may be a lot of invalid data values and unwanted data. Cleaning all these data and replacing them with meaningful data and removing missing data and replacing them with some alternate values. Even data collected may contain completely garbage values. It may not be in the exact format. All such scenario data must be verified and replaced with alternate values to make data meaningful and useful.
+* ##### Algorithms:
+    * SVM
+    * Decision Tree Classifier
+    * Decision Tree Classifier Entropy
+    * Random Forest Classifier
+    * KNN
 
-> ***The XGBOOST model was also used and trained, but due to non-compatibility of the exported model, it has not been implemented.***
+    > ***The XGBOOST model was also used and trained, but due to non-compatibility of the exported model, it has not been implemented.***
 
 
-##### Conclusion:
-- All of the above algorithms can be used to achieve the solution. Due to unavailability of any such publicly available dataset, the models are trained on a randomly generated non-accurate dataset which resulted in the obvious loss of accuracy of the models. Among the models, SVM turned out to be the best model to be used for the problem and other classifiers were almost having the similar accuracy rate to one another.
+* ##### Conclusion:
+    * All of the above algorithms can be used to achieve the solution. Due to unavailability of any such publicly available dataset, the models are trained on a randomly generated non-accurate dataset which resulted in the obvious loss of accuracy of the models. Among the models, SVM turned out to be the best model to be used for the problem and other classifiers were almost having the similar accuracy rate to one another.
 
-##### Future Scope:
-- The parameters used in the project can be modified and new parameters can be added to make the model more accurate to the problem. Also, use of a verified and accurate dataset can increase the efficiency and accuracy of the models. Some more algorithms like Naive Bayes may also be explored to check the accuracy of the system.
+* ##### Future Scope:
+    * The parameters used in the project can be modified and new parameters can be added to make the model more accurate to the problem. Also, use of a verified and accurate dataset can increase the efficiency and accuracy of the models. Some more algorithms like Naive Bayes may also be explored to check the accuracy of the system.
 
 #### Implementation:
 - Github Project Link : https://github.com/gautamgiri-dev/CareerGuidanceSystem
