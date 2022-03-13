@@ -152,7 +152,7 @@ button {
     display: inline-block;
     border-style: none;
     text-decoration: none;
-    width: 8em;
+    width: 12em;
     height: 2.6em;
     line-height: 2.5em;
     margin: 20px;
@@ -175,7 +175,7 @@ button:before {
     z-index: -1;
     background: var(--secondary);
     height: 160px;
-    width: 200px;
+    width: 300px;
     border-radius: 50%;
     outline: none;
 }
